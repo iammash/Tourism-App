@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:layout_behavior="@string/appbar_scrolling_view_behavior">
+    android:orientation="horizontal">
 
 
         <RelativeLayout
@@ -30,60 +29,60 @@
         </RelativeLayout>
 
 
-        <LinearLayout
-                app:layout_centerInParent="true"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:weightSum="2.0"/>
+        <!--<LinearLayout-->
+                <!--app:layout_centerInParent="true"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:weightSum="2.0"/>-->
 
 
-                    <RelativeLayout
-                        android:id="@+id/layout__featured"
-                        android:background="@color/cardview_light_background"
-                        android:clickable="true"
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/home_screen_grid_item_height"
-                        android:layout_weight="1.0"/>
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layout__featured"-->
+                        <!--android:background="@color/cardview_light_background"-->
+                        <!--android:clickable="true"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="@dimen/home_screen_grid_item_height"-->
+                        <!--android:layout_weight="1.0"/>-->
 
 
-                        <LinearLayout
+                        <!--<LinearLayout-->
 
-                            android:clickable="true"
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/home_screen_grid_item_height"
-                            android:layout_weight=""/>
-
-
-
-
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_width="@dimen/home_screen_grid_item_height"
-                                android:layout_height="@dimen/home_screen_grid_item_icon_size"
-                                android:src="@drawable/ic_home_featured"/>
-
-
-                            <TextView
-                                android:textSize="@dimen/home_screen_grid_item_text_size"
-                                android:textStyle="bold"
-                                android:textColor="@color/home_screen_text_color"
-                                android:layout_gravity="bottom"
-                                android:layout_width="@dimen/home_screen_grid_item_text_size"
-                                android:layout_height="@dimen/home_screen_grid_item_text_size"
-                                android:layout_marginTop="@dimen/home_screen_grid_item_text_margin"
-                                android:text="@string/lbl_navigation_item_featured"
-                                android:singleLine="true"
-                                android:textAllCaps="true" />
+                            <!--android:clickable="true"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="@dimen/home_screen_grid_item_height"-->
+                            <!--android:layout_weight=""/>-->
 
 
 
-                        </LinearLayout>
 
-                     </RelativeLayout>
+                            <!--<ImageView-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:layout_width="@dimen/home_screen_grid_item_height"-->
+                                <!--android:layout_height="@dimen/home_screen_grid_item_icon_size"-->
+                                <!--android:src="@drawable/ic_home_featured"/>-->
 
 
-        </LinearLayout>
+                            <!--<TextView-->
+                                <!--android:textSize="@dimen/home_screen_grid_item_text_size"-->
+                                <!--android:textStyle="bold"-->
+                                <!--android:textColor="@color/home_screen_text_color"-->
+                                <!--android:layout_gravity="bottom"-->
+                                <!--android:layout_width="@dimen/home_screen_grid_item_text_size"-->
+                                <!--android:layout_height="@dimen/home_screen_grid_item_text_size"-->
+                                <!--android:layout_marginTop="@dimen/home_screen_grid_item_text_margin"-->
+                                <!--android:text="@string/lbl_navigation_item_featured"-->
+                                <!--android:singleLine="true"-->
+                                <!--android:textAllCaps="true" />-->
+
+
+
+                        <!--</LinearLayout>-->
+
+                     <!--</RelativeLayout>-->
+
+
+        <!--</LinearLayout>-->
 
 </RelativeLayout>
 

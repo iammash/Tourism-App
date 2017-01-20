@@ -7,11 +7,11 @@
             android:icon="@drawable/ic_one"
             android:title="Home" />
         <item
-            android:id="@+id/nav_second_fragment"
+            android:id="@+id/featured"
             android:icon="@drawable/ic_two"
             android:title="Featured" />
         <item
-            android:id="@+id/nav_third_fragment"
+            android:id="@+id/tourist"
             android:icon="@drawable/ic_three"
             android:title="Tourist Spots" />
         <item
