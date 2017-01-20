@@ -103,11 +103,57 @@ public class MainActivity extends AppCompatActivity {
             case R.id.home:
                 fragmentClass = HomeFragment.class;
                 break;
-            case R.id.nav_second_fragment:
+            case R.id.featured:
                 fragmentClass = NearbyFragment.class;
                 break;
-            case R.id.nav_third_fragment:
+            case R.id.tourist:
                 fragmentClass = HotelsFragment.class;
+                break;
+            case R.id.nearby:
+                fragmentClass = HomeFragment.class;
+                break;
+
+            // 2nd Block menu
+            case R.id.transport:
+                fragmentClass = NearbyFragment.class;
+                break;
+            case R.id.hotel:
+                fragmentClass = HotelsFragment.class;
+                break;
+            case R.id.restaurants:
+                fragmentClass = HomeFragment.class;
+                break;
+            case R.id.shopping:
+                fragmentClass = NearbyFragment.class;
+                break;
+            case R.id.entertainment:
+                fragmentClass = HotelsFragment.class;
+                break;
+            case R.id.atm:
+                fragmentClass = HomeFragment.class;
+                break;
+            case R.id.prayer:
+                fragmentClass = NearbyFragment.class;
+                break;
+            case R.id.hospital:
+                fragmentClass = HotelsFragment.class;
+                break;
+            case R.id.policestation:
+                fragmentClass = HomeFragment.class;
+                break;
+
+            // 3rd Block menu
+            case R.id.setting:
+                fragmentClass = NearbyFragment.class;
+                break;
+            case R.id.rateus:
+                fragmentClass = HotelsFragment.class;
+                break;
+            case R.id.help:
+                fragmentClass = HomeFragment.class;
+                break;
+            case R.id.about:
+                fragmentClass = NearbyFragment.class;
                 break;
             default:
                 fragmentClass = HomeFragment.class;

@@ -4,29 +4,100 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
-            android:icon="@drawable/ic_one"
+            android:icon="@drawable/ic_home"
             android:title="Home" />
         <item
-            android:id="@+id/nav_second_fragment"
-            android:icon="@drawable/ic_two"
-            android:title="Second" />
+            android:id="@+id/featured"
+            android:icon="@drawable/ic_featured"
+            android:title="Featured" />
         <item
-            android:id="@+id/nav_third_fragment"
-            android:icon="@drawable/ic_three"
-            android:title="Third" />
+            android:id="@+id/tourist"
+            android:icon="@drawable/ic_tourist_spots"
+            android:title="Tourist Spots" />
+        <item
+            android:id="@+id/nearby"
+            android:icon="@drawable/ic_nearby"
+            android:title="Nearby" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/transport"
+            android:icon="@drawable/ic_transportation"
+            android:title="Transportation" />
+        <item
+            android:id="@+id/hotel"
+            android:icon="@drawable/ic_hotels"
+            android:title="Hotels" />
+        <item
+            android:id="@+id/restaurants"
+            android:icon="@drawable/ic_restaurant"
+            android:title="Restaurants" />
+        <item
+            android:id="@+id/shopping"
+            android:icon="@drawable/ic_shopping"
+            android:title="Shopping" />
+        <item
+            android:id="@+id/entertainment"
+            android:icon="@drawable/ic_entertainment"
+            android:title="Entertaiment" />
+        <item
+            android:id="@+id/atm"
+            android:icon="@drawable/ic_atm_booths"
+            android:title="ATM Booths" />
+        <item
+            android:id="@+id/prayer"
+            android:icon="@drawable/ic_prayer"
+            android:title="Prayer" />
+        <item
+            android:id="@+id/hospital"
+            android:icon="@drawable/ic_hospitals"
+            android:title="Hospitals" />
+        <item
+            android:id="@+id/policestation"
+            android:icon="@drawable/ic_police_station"
+            android:title="Police Station" />
+
+
     </group>
 
 
-    <item android:title="Sub items">
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:icon="@drawable/ic_four"
-                    android:title="Sub item 1" />
-                <item
-                    android:icon="@drawable/ic_five"
-                    android:title="Sub item 2" />
-            </group>
-        </menu>
-    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/rateus"
+            android:icon="@drawable/ic_rate_us"
+            android:title="Rate US" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help_feedback"
+            android:title="Help &amp; Feedback" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_about_barisal_tourism"
+            android:title="About Tourisum" />
+    </group>
+
+    <!--<item android:title="Sub items">-->
+        <!--<menu>-->
+            <!--<group android:checkableBehavior="single">-->
+                <!--<item-->
+                    <!--android:id="@+id/home"-->
+                    <!--android:icon="@drawable/ic_one"-->
+                    <!--android:title="Home" />-->
+                <!--<item-->
+                    <!--android:id="@+id/nav_second_fragment"-->
+                    <!--android:icon="@drawable/ic_two"-->
+                    <!--android:title="Second" />-->
+                <!--<item-->
+                    <!--android:id="@+id/nav_third_fragment"-->
+                    <!--android:icon="@drawable/ic_three"-->
+                    <!--android:title="Third" />-->
+            <!--</group>-->
+        <!--</menu>-->
+    <!--</item>-->
 </menu>
