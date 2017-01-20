@@ -20,7 +20,7 @@
 
             <com.daimajia.slider.library.SliderLayout
                 android:id="@+id/slider"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
@@ -94,64 +94,92 @@
     <!--</GridView>-->
 
 
-        <View
-            android:background="@color/home_screen_divider_color"
-            android:layout_height="@dimen/home_screen_grid_item_divider_height_width"
-            android:layout_width="match_parent" />
+            <View
+                android:background="@color/home_screen_divider_color"
+                android:layout_height="@dimen/home_screen_grid_item_divider_height_width"
+                android:layout_width="match_parent" />
 
-    <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="2.0"
-        android:layout_marginTop="181dp"
-        android:layout_below="@+id/view"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2.0"
+            android:layout_marginTop="181dp"
 
-        <RelativeLayout
-            android:background="@color/home_screen_divider_color"
-            android:clickable="true"
-            android:id="@+id/layout_prayer"
-            android:layout_height="@dimen/home_screen_grid_item_height"
-            android:layout_weight="1.0"
-            android:layout_width="0dp">
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
             <LinearLayout
                 android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:orientation="vertical"
                 android:padding="16dp"
-                android:layout_alignParentTop="true"
+                android:background="@color/home_screen_divider_color"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:layout_weight="1.0">
 
                 <ImageView
                     android:layout_gravity="center"
-                    android:layout_height="@dimen/home_screen_grid_item_icon_size"
+                    android:layout_height="67dp"
                     android:layout_width="104dp"
-                    android:src="@drawable/ic_home_prayer" />
+                    android:src="@drawable/ic_home_featured" />
 
                 <TextView
                     android:layout_gravity="top"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/home_screen_grid_item_text_margin"
                     android:layout_width="match_parent"
                     android:singleLine="true"
-                    android:text="@string/lbl_navigation_item_religion"
+                    android:text="@string/lbl_navigation_item_featured"
                     android:textAllCaps="true"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/home_screen_grid_item_text_size"
                     android:textStyle="bold" />
             </LinearLayout>
 
+            <RelativeLayout
+                android:background="@color/home_screen_divider_color"
+                android:clickable="true"
+                android:id="@+id/layout_featured"
+                android:layout_height="150.0dip"
+                android:layout_weight="1.0"
+                android:layout_width="0dp">
 
-        </RelativeLayout>
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_height="67dp"
+                        android:layout_width="104dp"
+                        android:src="@drawable/ic_home_tourist_spots" />
+
+                    <TextView
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/home_screen_grid_item_text_margin"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@string/lbl_navigation_item_tourist_spots"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/home_screen_grid_item_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
 
-    </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
 
 </RelativeLayout>
 
