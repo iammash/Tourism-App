@@ -13,11 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.view.View.OnClickListener;
 import com.daimajia.slider.library.Indicators.PagerIndicator;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.DefaultSliderView;
+
 
 /**
  * Created by mdsami on 1/20/2017.
@@ -149,6 +151,22 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        GridView gridView = (GridView) findViewById(R.id.gridview);
+        final BooksAdapter booksAdapter = new BooksAdapter(this, bookClasses);
+        gridView.setAdapter(booksAdapter);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Book_class bookClass = bookClasses[position];
+                bookClass.toggleFavorite();
+                booksAdapter.notifyDataSetChanged();
+            }
+        });
+
+
 //        this.layoutTouristSpots = (RelativeLayout) view.findViewById(R.id.layout_tourist_spots);
 //        this.layoutFeatured = (RelativeLayout) view.findViewById(R.id.layout_featured);
 //        this.layoutDistrictWise = (RelativeLayout) view.findViewById(R.id.layout_district_wise);
