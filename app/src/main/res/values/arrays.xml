@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_categories">
+        <item>Tourist Spots</item>
+        <item>Transportation</item>
+        <item>Hotels</item>
+        <item>Restaurants</item>
+        <item>Shopping</item>
+        <item>Entertainment</item>
+        <item>ATM Booths</item>
+        <item>Prayer</item>
+        <item>Hospitals</item>
+        <item>Police Station</item>
+    </string-array>
+    <string-array name="list_district">
+        <item>Barisal</item>
+        <item>Barguna</item>
+        <item>Bhola</item>
+        <item>Jhalokati</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+    </string-array>
+    <string-array name="list_language">
+        <item>Bangla</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>bn</item>
+        <item>en</item>
+    </string-array>
+    <!--<array name="array_dot_active">-->
+        <!--<item>@color/dot_light_screen1</item>-->
+        <!--<item>@color/dot_light_screen2</item>-->
+        <!--<item>@color/dot_light_screen3</item>-->
+        <!--<item>@color/dot_light_screen4</item>-->
+
+    <!--</array>-->
+    <!--<array name="array_dot_inactive">-->
+        <!--<item>@color/dot_dark_screen1</item>-->
+        <!--<item>@color/dot_dark_screen2</item>-->
+        <!--<item>@color/dot_dark_screen3</item>-->
+        <!--<item>@color/dot_dark_screen4</item>-->
+
+    <!--</array>-->
+</resources>

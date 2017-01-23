@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
             // 3rd Block menu
             case R.id.setting:
-                fragmentClass = NearbyFragment.class;
+                fragmentClass = SettingsFragment.class;
                 break;
             case R.id.rateus:
                 fragmentClass = HotelsFragment.class;
