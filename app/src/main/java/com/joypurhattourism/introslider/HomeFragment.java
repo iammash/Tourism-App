@@ -192,7 +192,7 @@ public class HomeFragment extends Fragment {
 //        });
 
 
-//        this.layoutTouristSpots = (RelativeLayout) view.findViewById(R.id.layout_tourist_spots);
+//       this.layoutTouristSpots = (RelativeLayout) view.findViewById(R.id.layout_tourist_spots);
 //        this.layoutFeatured = (RelativeLayout) view.findViewById(R.id.layout_featured);
 //        this.layoutDistrictWise = (RelativeLayout) view.findViewById(R.id.layout_district_wise);
 //        this.layoutNearby = (RelativeLayout) view.findViewById(R.id.layout_near_by);

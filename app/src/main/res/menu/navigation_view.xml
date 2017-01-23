@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/section_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_home"
+            android:title="@string/lbl_navigation_item_dashboard" />
+    </group>
+    <group
+        android:id="@+id/section_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_featured"
+            android:icon="@drawable/ic_featured"
+            android:title="@string/lbl_navigation_item_featured" />
+        <item
+            android:id="@+id/nav_tourist_spots"
+            android:icon="@drawable/ic_tourist_spots"
+            android:title="@string/lbl_navigation_item_tourist_spots" />
+        <!--<item-->
+            <!--android:id="@+id/nav_districts"-->
+            <!--android:icon="@drawable/nav_ic_action_districts"-->
+            <!--android:title="@string/lbl_navigation_item_districts" />-->
+        <item
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/ic_nearby"
+            android:title="@string/lbl_navigation_item_nearby" />
+    </group>
+    <group
+        android:id="@+id/section_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_transportation"
+            android:icon="@drawable/ic_transportation"
+            android:title="@string/lbl_navigation_item_transportation" />
+        <item
+            android:id="@+id/nav_hotels"
+            android:icon="@drawable/ic_hotels"
+            android:title="@string/lbl_navigation_item_hotels" />
+        <item
+            android:id="@+id/nav_restaurants"
+            android:icon="@drawable/ic_restaurant"
+            android:title="@string/lbl_navigation_item_restaurants" />
+        <item
+            android:id="@+id/nav_shopping"
+            android:icon="@drawable/ic_shopping"
+            android:title="@string/lbl_navigation_item_shopping" />
+        <item
+            android:id="@+id/nav_entertainment"
+            android:icon="@drawable/ic_entertainment"
+            android:title="@string/lbl_navigation_item_entertainment" />
+        <item
+            android:id="@+id/nav_atms"
+            android:icon="@drawable/ic_atm_booths"
+            android:title="@string/lbl_navigation_item_atms" />
+        <item
+            android:id="@+id/nav_religion"
+            android:icon="@drawable/ic_prayer"
+            android:title="@string/lbl_navigation_item_religion" />
+        <item
+            android:id="@+id/nav_hospitals"
+            android:icon="@drawable/ic_hospitals"
+            android:title="@string/lbl_navigation_item_hospitals" />
+        <item
+            android:id="@+id/nav_police_stations"
+            android:icon="@drawable/ic_police_station"
+            android:title="@string/lbl_navigation_item_police_station" />
+    </group>
+    <group
+        android:id="@+id/section_4"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/lbl_navigation_item_settings" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_rate_us"
+            android:title="@string/lbl_navigation_item_rate_us" />
+        <item
+            android:id="@+id/nav_help_feedback"
+            android:icon="@drawable/ic_help_feedback"
+            android:title="@string/lbl_navigation_item_help_feedback" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about_barisal_tourism"
+            android:title="@string/lbl_navigation_item_about" />
+    </group>
+</menu>
