@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass = HotelsFragment.class;
                 break;
             case R.id.atm:
-                fragmentClass = HomeFragment.class;
+                fragmentClass = FragmentAtms.class;
                 break;
             case R.id.prayer:
                 fragmentClass = NearbyFragment.class;

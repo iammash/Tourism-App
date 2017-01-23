@@ -10,16 +10,12 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.support.v7.app.ActionBar;
 
-/**
- * Created by mdsami on 1/22/2017.
- */
-
 public class SettingsFragment extends PreferenceFragment implements OnSharedPreferenceChangeListener {
     public static final String KEY_PREF_FIRST_TIME_LAUNCH = "pref_key_first_time_launch";
     public static final String KEY_PREF_LANGUAGE = "pref_key_language";
     public static final String LANGUAGE_BANGLA = "bn";
     public static final String LANGUAGE_ENGLISH = "en";
-    private static final String TAG = "com.joypurhattourism.introslider.SettingsFragment";
+    private static final String TAG = "com.ferdous.notepad.SettingsFragment";
     ActionBar mActionBar;
     Context mContext;
     onLanguageChangeListener mLanguageChangeListener;

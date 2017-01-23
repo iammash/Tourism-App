@@ -1,4 +1,6 @@
 package com.joypurhattourism.introslider;
+
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -16,30 +18,20 @@ import java.util.Locale;
  */
 
 
+@SuppressLint({"NewApi"})
 public class SettingsActivity extends AppCompatActivity {
-    private static final String TAG = "com.ferdous.esmsscheduler.SettingsActivity";
+    private static final String TAG = "com.joypurhattourism.introslider.SettingsActivity";
     ActionBar mActionBar;
     Context mContext;
     private Locale mLocale;
     SharedPreferences mSettings;
     Toolbar mToolBar;
 
-
-    class C05021 implements onLanguageChangeListener {
-        C05021() {
-        }
-
-        public void onLanguageChanged(String language) {
-            SettingsActivity.this.loadLocal(language);
-            SettingsActivity.this.recreate();
-        }
-    }
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) R.layout.activity_settings);
+        setContentView(R.layout.activity_settings);
         this.mContext = this;
-        this.mToolBar = (Toolbar) findViewById(R.id.newtoolber);
+        this.mToolBar = (Toolbar) findViewById(R.id.toolbar);
         if (this.mToolBar != null) {
             setSupportActionBar(this.mToolBar);
             this.mActionBar = getSupportActionBar();
@@ -48,7 +40,12 @@ public class SettingsActivity extends AppCompatActivity {
         this.mSettings = PreferenceManager.getDefaultSharedPreferences(this);
         SettingsFragment settingsFragment = new SettingsFragment();
         getFragmentManager().beginTransaction().replace(R.id.frame_settings_fragment, settingsFragment).commit();
-        settingsFragment.setOnLanguageChangeListener(new C05021());
+        settingsFragment.setOnLanguageChangeListener(new onLanguageChangeListener() {
+            public void onLanguageChanged(String language) {
+                SettingsActivity.this.loadLocal(language);
+                SettingsActivity.this.recreate();
+            }
+        });
     }
 
     protected void onResume() {
