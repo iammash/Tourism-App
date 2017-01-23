@@ -20,7 +20,7 @@
             android:title="Nearby" />
     </group>
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="none">
         <item
             android:id="@+id/transport"
             android:icon="@drawable/ic_transportation"
@@ -63,7 +63,7 @@
 
 
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="none">
         <item
             android:id="@+id/setting"
             android:icon="@drawable/ic_settings"
