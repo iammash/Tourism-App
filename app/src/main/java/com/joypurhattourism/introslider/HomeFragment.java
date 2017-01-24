@@ -164,9 +164,7 @@ public class HomeFragment extends Fragment {
 //        }
 //    }
 //
-//    public interface OnItemClickListener {
-//        void onItemClicked(int i);
-//    }
+
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
