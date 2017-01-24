@@ -11,6 +11,24 @@
 
         <!--<item name="android:windowTranslucentStatus">true</item>-->
 
+
+
+    </style>
+
+
+    <style name="MyCustomTabLayout" parent="@style/Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#ffffffff</item>
+        <item name="tabIndicatorHeight">3.0dip</item>
+        <item name="tabBackground">?selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">#ffffffff</item></style>
+
+
+    <style name="MyCustomTabTextAppearance" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#b3ffffff</item>
+        <item name="textAllCaps">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

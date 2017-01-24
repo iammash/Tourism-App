@@ -66,104 +66,15 @@ public class HomeFragment extends Fragment {
     RelativeLayout layoutTransportation;
     SharedPreferences mSettings;
     SliderLayout mSliderLayout;
-    private AdapterView.OnItemClickListener onItemClickListener;
+    //private AdapterView.OnItemClickListener onItemClickListener;
+    private OnItemClickListener onItemClickListener;
+
     public interface OnItemClickListener {
         void onItemClicked(int i);
     }
 
-//    class C04251 implements OnClickListener {
-//        C04251() {
-//        }
 //
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(2);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.2 */
-//    class C04262 implements OnClickListener {
-//        C04262() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(1);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.3 */
-//    class C04273 implements OnClickListener {
-//        C04273() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(3);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.4 */
-//    class C04284 implements OnClickListener {
-//        C04284() {
-//        }
-//
-//        public void onClick(View v) {
-//            if (HomeFragment.this.isLocationEnabled()) {
-//                HomeFragment.this.onItemClickListener.onItemClicked(4);
-//            } else {
-//                HomeFragment.this.showAlert();
-//            }
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.5 */
-//    class C04295 implements OnClickListener {
-//        C04295() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(5);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.6 */
-//    class C04306 implements OnClickListener {
-//        C04306() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(6);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.7 */
-//    class C04317 implements OnClickListener {
-//        C04317() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(7);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.8 */
-//    class C04328 implements OnClickListener {
-//        C04328() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(8);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.9 */
-//    class C04339 implements OnClickListener {
-//        C04339() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(9);
-//        }
-//    }
-//
+
 
 
     public void onCreate(Bundle savedInstanceState) {
@@ -175,34 +86,23 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-//        GridView gridView = (GridView) findViewById(R.id.gridview);
-//        final BooksAdapter booksAdapter = new BooksAdapter(this, bookClasses);
-//        gridView.setAdapter(booksAdapter);
-//
-//        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Book_class bookClass = bookClasses[position];
-//                bookClass.toggleFavorite();
-//                booksAdapter.notifyDataSetChanged();
-//            }
-//        });
 
 
-//       this.layoutTouristSpots = (RelativeLayout) view.findViewById(R.id.layout_tourist_spots);
-//        this.layoutFeatured = (RelativeLayout) view.findViewById(R.id.layout_featured);
-//        this.layoutDistrictWise = (RelativeLayout) view.findViewById(R.id.layout_district_wise);
-//        this.layoutNearby = (RelativeLayout) view.findViewById(R.id.layout_near_by);
-//        this.layoutTransportation = (RelativeLayout) view.findViewById(R.id.layout_transportation);
-//        this.layoutHotels = (RelativeLayout) view.findViewById(R.id.layout_hotels);
-//        this.layoutRestaurants = (RelativeLayout) view.findViewById(R.id.layout_restaurants);
-//        this.layoutShopping = (RelativeLayout) view.findViewById(R.id.layout_shopping);
-//        this.layoutEntertainment = (RelativeLayout) view.findViewById(R.id.layout_entertainment);
-//        this.layoutAtms = (RelativeLayout) view.findViewById(R.id.layout_atms);
-//        this.layoutPrayer = (RelativeLayout) view.findViewById(R.id.layout_prayer);
-//        this.layoutHospitals = (RelativeLayout) view.findViewById(R.id.layout_hospitals);
-//        this.layoutPoliceStation = (RelativeLayout) view.findViewById(R.id.layout_police_stations);
+
+
+        this.layoutTouristSpots = (RelativeLayout) view.findViewById(R.id.layout_tourist_spots);
+        this.layoutFeatured = (RelativeLayout) view.findViewById(R.id.layout_featured);
+        this.layoutDistrictWise = (RelativeLayout) view.findViewById(R.id.layout_district_wise);
+        this.layoutNearby = (RelativeLayout) view.findViewById(R.id.layout_near_by);
+        this.layoutTransportation = (RelativeLayout) view.findViewById(R.id.layout_transportation);
+        this.layoutHotels = (RelativeLayout) view.findViewById(R.id.layout_hotels);
+        this.layoutRestaurants = (RelativeLayout) view.findViewById(R.id.layout_restaurants);
+        this.layoutShopping = (RelativeLayout) view.findViewById(R.id.layout_shopping);
+        this.layoutEntertainment = (RelativeLayout) view.findViewById(R.id.layout_entertainment);
+        this.layoutAtms = (RelativeLayout) view.findViewById(R.id.layout_atms);
+        this.layoutPrayer = (RelativeLayout) view.findViewById(R.id.layout_prayer);
+        this.layoutHospitals = (RelativeLayout) view.findViewById(R.id.layout_hospitals);
+        this.layoutPoliceStation = (RelativeLayout) view.findViewById(R.id.layout_police_stations);
        this.mSliderLayout = (SliderLayout) view.findViewById(R.id.slider);
 //        DefaultSliderView slide0 = new DefaultSliderView(getActivity());
 //        slide0.image((int) R.drawable.slide_0);

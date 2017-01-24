@@ -47,6 +47,14 @@
 
 
 
+
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+
+
+
     <string name="lbl_navigation_item_atms">ATM Booths</string>
     <string name="lbl_navigation_item_dashboard">Home</string>
     <string name="lbl_navigation_item_districts">District Wise</string>
@@ -74,4 +82,21 @@
     <string name="lbl_religion_temple">Temple</string>
     <string name="lbl_taka">Tk</string>
     <string name="lbl_yes">Yes</string>
+    <string name="lbl_back_press">Press once again to exit</string>
+
+
+    <string name="app_version_code">1.0.0</string>
+
+    <string name="dlg_button_no">NO</string>
+    <string name="dlg_button_not_now">NOT NOW</string>
+    <string name="dlg_button_ok">OK</string>
+    <string name="dlg_button_remove">REMOVE</string>
+    <string name="dlg_button_save">SAVE</string>
+    <string name="dlg_button_send">SEND</string>
+    <string name="dlg_button_yes">YES</string>
+    <string name="dlg_content_enable_location">Your location seems to be disabled. Do you want to enable it?</string>
+    <string name="dlg_header_title_enable_location">Enable location</string>
+
+
+    <string name="google_maps_key">AIzaSyBx2Wo52aU_TW4oMbPC6Rl8Pj0NPTImHE8</string>
 </resources>

@@ -2,11 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.joypurhattourism.introslider">
 
-    <!-- if you want to load images from the internet -->
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- if you want to load images from a file OR from the internet -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:glEsVersion="20000" android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +30,12 @@
             android:name="com.joypurhattourism.introslider.MainActivity"
             android:label="@string/title_activity_welcome"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key" />
+        <!--<activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />-->
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.ferdous.barisaltourism.firebaseinitprovider" android:initOrder="100" />
     </application>
 
 </manifest>
