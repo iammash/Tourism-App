@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.support.v7.app.AlertDialog.Builder;
 import android.widget.RelativeLayout;
 import android.view.View.OnClickListener;
 import com.daimajia.slider.library.Indicators.PagerIndicator;
@@ -66,107 +67,13 @@ public class HomeFragment extends Fragment {
     RelativeLayout layoutTransportation;
     SharedPreferences mSettings;
     SliderLayout mSliderLayout;
-    private AdapterView.OnItemClickListener onItemClickListener;
+    private OnItemClickListener onItemClickListener;
+    //private AdapterView.OnItemClickListener onItemClickListener;
     public interface OnItemClickListener {
         void onItemClicked(int i);
     }
 
-//    class C04251 implements OnClickListener {
-//        C04251() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(2);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.2 */
-//    class C04262 implements OnClickListener {
-//        C04262() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(1);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.3 */
-//    class C04273 implements OnClickListener {
-//        C04273() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(3);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.4 */
-//    class C04284 implements OnClickListener {
-//        C04284() {
-//        }
-//
-//        public void onClick(View v) {
-//            if (HomeFragment.this.isLocationEnabled()) {
-//                HomeFragment.this.onItemClickListener.onItemClicked(4);
-//            } else {
-//                HomeFragment.this.showAlert();
-//            }
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.5 */
-//    class C04295 implements OnClickListener {
-//        C04295() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(5);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.6 */
-//    class C04306 implements OnClickListener {
-//        C04306() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(6);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.7 */
-//    class C04317 implements OnClickListener {
-//        C04317() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(7);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.8 */
-//    class C04328 implements OnClickListener {
-//        C04328() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(8);
-//        }
-//    }
-//
-//    /* renamed from: com.ferdous.barisaltourism.HomeFragment.9 */
-//    class C04339 implements OnClickListener {
-//        C04339() {
-//        }
-//
-//        public void onClick(View v) {
-//            HomeFragment.this.onItemClickListener.onItemClicked(9);
-//        }
-//    }
-//
-//    public interface OnItemClickListener {
-//        void onItemClicked(int i);
-//    }
+
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -177,23 +84,12 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-//        GridView gridView = (GridView) findViewById(R.id.gridview);
-//        final BooksAdapter booksAdapter = new BooksAdapter(this, bookClasses);
-//        gridView.setAdapter(booksAdapter);
-//
-//        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Book_class bookClass = bookClasses[position];
-//                bookClass.toggleFavorite();
-//                booksAdapter.notifyDataSetChanged();
-//            }
-//        });
 
 
-//       this.layoutTouristSpots = (RelativeLayout) view.findViewById(R.id.layout_tourist_spots);
-//        this.layoutFeatured = (RelativeLayout) view.findViewById(R.id.layout_featured);
+
+
+          this.layoutFeatured = (RelativeLayout) view.findViewById(R.id.layout_featured);
+          this.layoutTouristSpots = (RelativeLayout) view.findViewById(R.id.layout_tourist_spots);
 //        this.layoutDistrictWise = (RelativeLayout) view.findViewById(R.id.layout_district_wise);
 //        this.layoutNearby = (RelativeLayout) view.findViewById(R.id.layout_near_by);
 //        this.layoutTransportation = (RelativeLayout) view.findViewById(R.id.layout_transportation);
@@ -236,36 +132,13 @@ public class HomeFragment extends Fragment {
         this.mSliderLayout.addSlider(slide7);
         this.mSliderLayout.addSlider(slide8);
         this.mSliderLayout.addSlider(slide9);
-//        this.mSliderLayout.setCustomIndicator((PagerIndicator) view.findViewById(R.id.custom_indicator));
-//        this.layoutTouristSpots.setOnClickListener(new C04251());
-//        this.layoutFeatured.setOnClickListener(new C04262());
-//        this.layoutDistrictWise.setOnClickListener(new C04273());
-//        this.layoutNearby.setOnClickListener(new C04284());
-//        this.layoutTransportation.setOnClickListener(new C04295());
-//        this.layoutHotels.setOnClickListener(new C04306());
-//        this.layoutRestaurants.setOnClickListener(new C04317());
-//        this.layoutShopping.setOnClickListener(new C04328());
-//        this.layoutEntertainment.setOnClickListener(new C04339());
-//        this.layoutAtms.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                HomeFragment.this.onItemClickListener.onItemClicked(10);
-//            }
-//        });
-//        this.layoutPrayer.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                HomeFragment.this.onItemClickListener.onItemClicked(11);
-//            }
-//        });
-//        this.layoutHospitals.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                HomeFragment.this.onItemClickListener.onItemClicked(12);
-//            }
-//        });
-//        this.layoutPoliceStation.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                HomeFragment.this.onItemClickListener.onItemClicked(13);
-//            }
-//        });
+        this.mSliderLayout.setCustomIndicator((PagerIndicator) view.findViewById(R.id.custom_indicator));
+        this.layoutFeatured.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                HomeFragment.this.onItemClickListener.onItemClicked(1);
+            }
+        });
+
         return view;
     }
 
@@ -274,32 +147,38 @@ public class HomeFragment extends Fragment {
         super.onStop();
     }
 
-//    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
-//        this.onItemClickListener = onItemClickListener;
-//    }
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
 
-//    private boolean isLocationEnabled() {
-//        FragmentActivity activity = getActivity();
-//        getActivity();
-//        LocationManager locationManager = (LocationManager) activity.getSystemService("location");
-//        return locationManager.isProviderEnabled("gps") || locationManager.isProviderEnabled("network");
-//    }
-//
-//    private void showAlert() {
-//        NotificationCompat.Action.Builder dialog = new NotificationCompat.Action.Builder(getActivity());
-//        CharSequence strTitle = getResources().getString(R.string.dlg_header_title_enable_location);
-//        CharSequence strContent = getResources().getString(R.string.dlg_content_enable_location);
-//        CharSequence strButtonYes = getResources().getString(R.string.dlg_button_yes);
-//        dialog.setTitle(strTitle).setMessage(strContent).setPositiveButton(strButtonYes, new DialogInterface.OnClickListener() {
-//            public void onClick(DialogInterface paramDialogInterface, int paramInt) {
-//                HomeFragment.this.startActivity(new Intent("android.settings.LOCATION_SOURCE_SETTINGS"));
-//            }
-//        }).setNegativeButton(getResources().getString(R.string.dlg_button_no), new DialogInterface.OnClickListener() {
-//            public void onClick(DialogInterface paramDialogInterface, int paramInt) {
-//            }
-//        });
-//        dialog.show();
-//    }
+
+
+
+
+
+    private boolean isLocationEnabled() {
+        FragmentActivity activity = getActivity();
+        getActivity();
+        LocationManager locationManager = (LocationManager) activity.getSystemService(Context.LOCATION_SERVICE);
+        return locationManager.isProviderEnabled("gps") || locationManager.isProviderEnabled("network");
+    }
+
+
+    private void showAlert() {
+        Builder dialog = new Builder(getActivity());
+        String strTitle = getResources().getString(R.string.dlg_header_title_enable_location);
+        String strContent = getResources().getString(R.string.dlg_content_enable_location);
+        String strButtonYes = getResources().getString(R.string.dlg_button_yes);
+        dialog.setTitle(strTitle).setMessage(strContent).setPositiveButton(strButtonYes, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+                HomeFragment.this.startActivity(new Intent("android.settings.LOCATION_SOURCE_SETTINGS"));
+            }
+        }).setNegativeButton(getResources().getString(R.string.dlg_button_no), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+            }
+        });
+        dialog.show();
+    }
 //
 //    public void loadSettings() {
 //        this.mSettings = PreferenceManager.getDefaultSharedPreferences(getActivity());

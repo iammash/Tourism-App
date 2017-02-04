@@ -21,7 +21,8 @@
     <color name="dot_light_screen2">#8cf9eb</color>
     <color name="dot_light_screen3">#93c6fd</color>
     <color name="dot_light_screen4">#e4b5fc</color>
-
+    <color name="textColorPrimary">#ff202020</color>
+    <color name="textColorSecondary">#ff727272</color>
 
     <!-- Home icon colors -->
     <color name="home_screen_divider_color">#ffcdcdcd</color>

@@ -150,11 +150,11 @@
                     android:orientation="vertical"
                     android:padding="16.0dip">
 
-                    <ImageView
-                        android:layout_width="@dimen/home_screen_grid_item_icon_size"
-                        android:layout_height="@dimen/home_screen_grid_item_icon_size"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_home_district_wise" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="@dimen/home_screen_grid_item_icon_size"-->
+                        <!--android:layout_height="@dimen/home_screen_grid_item_icon_size"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:src="@drawable/ic_home_district_wise" />-->
 
                     <TextView
                         android:layout_width="wrap_content"
