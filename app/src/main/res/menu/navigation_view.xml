@@ -85,7 +85,7 @@
             android:title="@string/lbl_navigation_item_help_feedback" />
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/ic_about_barisal_tourism"
+            android:icon="@drawable/ic_about"
             android:title="@string/lbl_navigation_item_about" />
     </group>
 </menu>

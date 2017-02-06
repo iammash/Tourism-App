@@ -44,7 +44,11 @@
 
     <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 
-
+    <string name="dlg_content_enable_location">Your location seems to be disabled. Do you want to enable it?</string>
+    <string name="dlg_header_title_enable_location">Enable location</string>
+    <string name="dlg_header_title_open_source_licenses">Open source licenses</string>
+    <string name="dlg_button_yes">YES</string>
+    <string name="dlg_button_no">NO</string>
 
 
     <string name="lbl_navigation_item_atms">ATM Booths</string>

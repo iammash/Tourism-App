@@ -78,7 +78,7 @@
             android:title="Help &amp; Feedback" />
         <item
             android:id="@+id/about"
-            android:icon="@drawable/ic_about_barisal_tourism"
+            android:icon="@drawable/ic_about"
             android:title="About Tourisum" />
     </group>
 
