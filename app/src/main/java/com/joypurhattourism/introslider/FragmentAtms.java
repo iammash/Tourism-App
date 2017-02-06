@@ -38,4 +38,5 @@ import org.json.JSONObject;
  */
 
 public class FragmentAtms {
+
 }
